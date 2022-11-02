@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BelotAI</title>
+    <link rel="stylesheet" href="css/belot.css">
+</head>
+<body>
+    <h1>Top Team 1 Score: <span id="top-score">0</span></h1>
+    <h1>Side Team 2 Score: <span id="side-score">0</span></h1>
+    <h2>Top Team 1 Game Score: <span id="top-game-score">0</span></h2>
+    <h2>Side Team 2 Game Score: <span id="side-game-score">0</span></h2>
+    <table class="t0 card-table">
+        <td id="t0c0" onclick="if (this.style['background-color'] == 'green') {play_card(0, 0)}"><img id="i0c0" src="Cards/Blank.png"></td>
+        <td id="t0c1" onclick="if (this.style['background-color'] == 'green') {play_card(1, 0)}"><img id="i0c1" src="Cards/Blank.png"></td>
+        <td id="t0c2" onclick="if (this.style['background-color'] == 'green') {play_card(2, 0)}"><img id="i0c2" src="Cards/Blank.png"></td>
+        <td id="t0c3" onclick="if (this.style['background-color'] == 'green') {play_card(3, 0)}"><img id="i0c3" src="Cards/Blank.png"></td>
+        <td id="t0c4" onclick="if (this.style['background-color'] == 'green') {play_card(4, 0)}"><img id="i0c4" src="Cards/Blank.png"></td>
+        <td id="t0c5" onclick="if (this.style['background-color'] == 'green') {play_card(5, 0)}"><img id="i0c5" src="Cards/Blank.png"></td>
+        <td id="t0c6" onclick="if (this.style['background-color'] == 'green') {play_card(6, 0)}"><img id="i0c6" src="Cards/Blank.png"></td>
+        <td id="t0c7" onclick="if (this.style['background-color'] == 'green') {play_card(7, 0)}"><img id="i0c7" src="Cards/Blank.png"></td>
+    </table>
+
+    <table class="t0-calls calls-table">
+        <td id="t0-calls-pass" onclick="if (this.style['background-color'] == 'green') {call('X', 0)}"><img id="t0-calls-pass-img" src="Cards/CallsPass.jpg"></td>
+        <td id="t0-calls-clubs" onclick="if (this.style['background-color'] == 'green') {call('C', 0)}"><img id="t0-calls-clubs-img" src="Cards/CallsClubs.jpg"></td>
+        <td id="t0-calls-diamonds" onclick="if (this.style['background-color'] == 'green') {call('D', 0)}"><img id="t0-calls-diamonds-img" src="Cards/CallsDiamonds.png"></td>
+        <td id="t0-calls-hearts" onclick="if (this.style['background-color'] == 'green') {call('H', 0)}"><img id="t0-calls-hearts-img" src="Cards/CallsHearts.png"></td>
+        <td id="t0-calls-spades" onclick="if (this.style['background-color'] == 'green') {call('S', 0)}"><img id="t0-calls-spades-img" src="Cards/CallsSpades.jpg"></td>
+        <td id="t0-calls-aces" onclick="if (this.style['background-color'] == 'green') {call('A', 0)}"><img id="t0-calls-aces-img" src="Cards/CallsAces.png"></td>
+        <td id="t0-calls-jacks" onclick="if (this.style['background-color'] == 'green') {call('J', 0)}"><img id="t0-calls-jacks-img" src="Cards/CallsJacks.png"></td>
+        <td id="t0-calls-contra" onclick="if (this.style['background-color'] == 'green') {call('2', 0)}"><img id="t0-calls-contra-img" src="Cards/CallsContra.png"></td>
+        <td id="t0-calls-recontra" onclick="if (this.style['background-color'] == 'green') {call('4', 0)}"><img id="t0-calls-recontra-img" src="Cards/CallsRecontra.png"></td>
+    </table>
+
+    <table class="t1 card-table">
+        <td id="t1c0" onclick="if (this.style['background-color'] == 'green') {play_card(0, 1)}"><img id="i1c0" src="Cards/Blank.png"></td>
+        <td id="t1c1" onclick="if (this.style['background-color'] == 'green') {play_card(1, 1)}"><img id="i1c1" src="Cards/Blank.png"></td>
+        <td id="t1c2" onclick="if (this.style['background-color'] == 'green') {play_card(2, 1)}"><img id="i1c2" src="Cards/Blank.png"></td>
+        <td id="t1c3" onclick="if (this.style['background-color'] == 'green') {play_card(3, 1)}"><img id="i1c3" src="Cards/Blank.png"></td>
+        <td id="t1c4" onclick="if (this.style['background-color'] == 'green') {play_card(4, 1)}"><img id="i1c4" src="Cards/Blank.png"></td>
+        <td id="t1c5" onclick="if (this.style['background-color'] == 'green') {play_card(5, 1)}"><img id="i1c5" src="Cards/Blank.png"></td>
+        <td id="t1c6" onclick="if (this.style['background-color'] == 'green') {play_card(6, 1)}"><img id="i1c6" src="Cards/Blank.png"></td>
+        <td id="t1c7" onclick="if (this.style['background-color'] == 'green') {play_card(7, 1)}"><img id="i1c7" src="Cards/Blank.png"></td>
+    </table>
+
+    <table class="t1-calls calls-table">
+        <td id="t1-calls-pass" onclick="if (this.style['background-color'] == 'green') {call('X', 1)}"><img id="t1-calls-pass-img" src="Cards/CallsPass.jpg"></td>
+        <td id="t1-calls-clubs" onclick="if (this.style['background-color'] == 'green') {call('C', 1)}"><img id="t1-calls-clubs-img" src="Cards/CallsClubs.jpg"></td>
+        <td id="t1-calls-diamonds" onclick="if (this.style['background-color'] == 'green') {call('D', 1)}"><img id="t1-calls-diamonds-img" src="Cards/CallsDiamonds.png"></td>
+        <td id="t1-calls-hearts" onclick="if (this.style['background-color'] == 'green') {call('H', 1)}"><img id="t1-calls-hearts-img" src="Cards/CallsHearts.png"></td>
+        <td id="t1-calls-spades" onclick="if (this.style['background-color'] == 'green') {call('S', 1)}"><img id="t1-calls-spades-img" src="Cards/CallsSpades.jpg"></td>
+        <td id="t1-calls-aces" onclick="if (this.style['background-color'] == 'green') {call('A', 1)}"><img id="t1-calls-aces-img" src="Cards/CallsAces.png"></td>
+        <td id="t1-calls-jacks" onclick="if (this.style['background-color'] == 'green') {call('J', 1)}"><img id="t1-calls-jacks-img" src="Cards/CallsJacks.png"></td>
+        <td id="t1-calls-contra" onclick="if (this.style['background-color'] == 'green') {call('2', 1)}"><img id="t1-calls-contra-img" src="Cards/CallsContra.png"></td>
+        <td id="t1-calls-recontra" onclick="if (this.style['background-color'] == 'green') {call('4', 1)}"><img id="t1-calls-recontra-img" src="Cards/CallsRecontra.png"></td>
+    </table>
+
+    <table class="t2 card-table">
+        <td id="t2c0" onclick="if (this.style['background-color'] == 'green') {play_card(0, 2)}"><img id="i2c0" src="Cards/Blank.png"></td>
+        <td id="t2c1" onclick="if (this.style['background-color'] == 'green') {play_card(1, 2)}"><img id="i2c1" src="Cards/Blank.png"></td>
+        <td id="t2c2" onclick="if (this.style['background-color'] == 'green') {play_card(2, 2)}"><img id="i2c2" src="Cards/Blank.png"></td>
+        <td id="t2c3" onclick="if (this.style['background-color'] == 'green') {play_card(3, 2)}"><img id="i2c3" src="Cards/Blank.png"></td>
+        <td id="t2c4" onclick="if (this.style['background-color'] == 'green') {play_card(4, 2)}"><img id="i2c4" src="Cards/Blank.png"></td>
+        <td id="t2c5" onclick="if (this.style['background-color'] == 'green') {play_card(5, 2)}"><img id="i2c5" src="Cards/Blank.png"></td>
+        <td id="t2c6" onclick="if (this.style['background-color'] == 'green') {play_card(6, 2)}"><img id="i2c6" src="Cards/Blank.png"></td>
+        <td id="t2c7" onclick="if (this.style['background-color'] == 'green') {play_card(7, 2)}"><img id="i2c7" src="Cards/Blank.png"></td>
+    </table>
+
+    <table class="t2-calls calls-table">
+        <td id="t2-calls-pass" onclick="if (this.style['background-color'] == 'green') {call('X', 2)}"><img id="t2-calls-pass-img" src="Cards/CallsPass.jpg"></td>
+        <td id="t2-calls-clubs" onclick="if (this.style['background-color'] == 'green') {call('C', 2)}"><img id="t2-calls-clubs-img" src="Cards/CallsClubs.jpg"></td>
+        <td id="t2-calls-diamonds" onclick="if (this.style['background-color'] == 'green') {call('D', 2)}"><img id="t2-calls-diamonds-img" src="Cards/CallsDiamonds.png"></td>
+        <td id="t2-calls-hearts" onclick="if (this.style['background-color'] == 'green') {call('H', 2)}"><img id="t2-calls-hearts-img" src="Cards/CallsHearts.png"></td>
+        <td id="t2-calls-spades" onclick="if (this.style['background-color'] == 'green') {call('S', 2)}"><img id="t2-calls-spades-img" src="Cards/CallsSpades.jpg"></td>
+        <td id="t2-calls-aces" onclick="if (this.style['background-color'] == 'green') {call('A', 2)}"><img id="t2-calls-aces-img" src="Cards/CallsAces.png"></td>
+        <td id="t2-calls-jacks" onclick="if (this.style['background-color'] == 'green') {call('J', 2)}"><img id="t2-calls-jacks-img" src="Cards/CallsJacks.png"></td>
+        <td id="t2-calls-contra" onclick="if (this.style['background-color'] == 'green') {call('2', 2)}"><img id="t2-calls-contra-img" src="Cards/CallsContra.png"></td>
+        <td id="t2-calls-recontra" onclick="if (this.style['background-color'] == 'green') {call('4', 2)}"><img id="t2-calls-recontra-img" src="Cards/CallsRecontra.png"></td>
+    </table>
+
+    <table class="t3 card-table">
+        <td id="t3c0" onclick="if (this.style['background-color'] == 'green') {play_card(0, 3)}"><img id="i3c0" src="Cards/Blank.png"></td>
+        <td id="t3c1" onclick="if (this.style['background-color'] == 'green') {play_card(1, 3)}"><img id="i3c1" src="Cards/Blank.png"></td>
+        <td id="t3c2" onclick="if (this.style['background-color'] == 'green') {play_card(2, 3)}"><img id="i3c2" src="Cards/Blank.png"></td>
+        <td id="t3c3" onclick="if (this.style['background-color'] == 'green') {play_card(3, 3)}"><img id="i3c3" src="Cards/Blank.png"></td>
+        <td id="t3c4" onclick="if (this.style['background-color'] == 'green') {play_card(4, 3)}"><img id="i3c4" src="Cards/Blank.png"></td>
+        <td id="t3c5" onclick="if (this.style['background-color'] == 'green') {play_card(5, 3)}"><img id="i3c5" src="Cards/Blank.png"></td>
+        <td id="t3c6" onclick="if (this.style['background-color'] == 'green') {play_card(6, 3)}"><img id="i3c6" src="Cards/Blank.png"></td>
+        <td id="t3c7" onclick="if (this.style['background-color'] == 'green') {play_card(7, 3)}"><img id="i3c7" src="Cards/Blank.png"></td>
+    </table>
+
+    <table class="t3-calls calls-table">
+        <td id="t3-calls-pass" onclick="if (this.style['background-color'] == 'green') {call('X', 3)}"><img id="t3-calls-pass-img" src="Cards/CallsPass.jpg"></td>
+        <td id="t3-calls-clubs" onclick="if (this.style['background-color'] == 'green') {call('C', 3)}"><img id="t3-calls-clubs-img" src="Cards/CallsClubs.jpg"></td>
+        <td id="t3-calls-diamonds" onclick="if (this.style['background-color'] == 'green') {call('D', 3)}"><img id="t3-calls-diamonds-img" src="Cards/CallsDiamonds.png"></td>
+        <td id="t3-calls-hearts" onclick="if (this.style['background-color'] == 'green') {call('H', 3)}"><img id="t3-calls-hearts-img" src="Cards/CallsHearts.png"></td>
+        <td id="t3-calls-spades" onclick="if (this.style['background-color'] == 'green') {call('S', 3)}"><img id="t3-calls-spades-img" src="Cards/CallsSpades.jpg"></td>
+        <td id="t3-calls-aces" onclick="if (this.style['background-color'] == 'green') {call('A', 3)}"><img id="t3-calls-aces-img" src="Cards/CallsAces.png"></td>
+        <td id="t3-calls-jacks" onclick="if (this.style['background-color'] == 'green') {call('J', 3)}"><img id="t3-calls-jacks-img" src="Cards/CallsJacks.png"></td>
+        <td id="t3-calls-contra" onclick="if (this.style['background-color'] == 'green') {call('2', 3)}"><img id="t3-calls-contra-img" src="Cards/CallsContra.png"></td>
+        <td id="t3-calls-recontra" onclick="if (this.style['background-color'] == 'green') {call('4', 3)}"><img id="t3-calls-recontra-img" src="Cards/CallsRecontra.png"></td>
+    </table>
+
+    <table class="t4 card-table">
+        <td id="t4c0"><img id="i4c0" src="Cards/Blank.png"></td>
+    </table>
+    <table class="t5 card-table">
+        <td id="t5c0"><img id="i5c0" src="Cards/Blank.png"></td>
+    </table>
+    <table class="t6 card-table">
+        <td id="t6c0"><img id="i6c0" src="Cards/Blank.png"></td>
+    </table>
+    <table class="t7 card-table">
+        <td id="t7c0"><img id="i7c0" src="Cards/Blank.png"></td>
+    </table>
+</body>
+</html>
+
+<script type="text/javascript" src="js/belot.js"></script>

@@ -1,0 +1,105 @@
+.card-table, .card-table td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 3px;
+}
+
+.card-table img {
+    display: block;
+    width: 5em;
+    height: 5em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.calls-table, .calls-table td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 3px;
+}
+
+.calls-table img {
+    display: block;
+    width: 2.5em;
+    height: 2.5em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.t0 {
+    position: absolute;
+    left: 600px;
+    top: 100px;
+    transform:rotate(180deg);
+}
+
+.t0-calls {
+    position: absolute;
+    left: 720px;
+    top: 200px;
+    transform:rotate(180deg);
+}
+
+.t1 {
+    position: absolute;
+    left: 200px;
+    top: 440px;
+    transform:rotate(90deg);
+}
+
+.t1-calls {
+    position: absolute;
+    left: 420px;
+    top: 470px;
+    transform:rotate(90deg);
+}
+
+.t2 {
+    position: absolute;
+    left: 600px;
+    top: 800px;
+}
+
+.t2-calls {
+    position: absolute;
+    left: 720px;
+    top: 740px;
+}
+
+.t3 {
+    position: absolute;
+    left: 1000px;
+    top: 440px;
+    transform:rotate(270deg);
+}
+
+.t3-calls {
+    position: absolute;
+    left: 1055px;
+    top: 470px;
+    transform:rotate(270deg);
+}
+
+.t4 {
+    position: absolute;
+    left: 885px;
+    top: 330px;
+}
+
+.t5 {
+    position: absolute;
+    left: 750px;
+    top: 440px;
+}
+
+.t6 {
+    position: absolute;
+    left: 885px;
+    top: 550px;
+}
+
+.t7 {
+    position: absolute;
+    left: 1015px;
+    top: 440px;
+}
